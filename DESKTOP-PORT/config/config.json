@@ -1,0 +1,14 @@
+{
+    "App":{
+        "window":{
+            "title": "Neocaridina",
+            "width": 1200,
+            "height": 720,
+            "menu": false
+        },
+
+        "developer": {
+            "activated": true
+        }
+    }
+}
