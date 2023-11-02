@@ -22,4 +22,4 @@ The library port of neocaridina allows you to import the interpreter as a librar
 ## Docs
 Neocaridina is a multi paradigm, multi-platform, dynamically typed, interpreted scripting and programming language for web and desktop use. 
 
-[we have an extensive wiki site here]() **<-- in progress**
+[we have an extensive wiki site here](https://github.com/FrancisStudios/neocaridina-js/wiki) **<-- in progress**
