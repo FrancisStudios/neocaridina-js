@@ -4,7 +4,12 @@ import { NEO } from '../../neocaridina-js/main'
 
 function App() {
   
-  let code = NEO.run('# Hello worldöcske');
+  let code = NEO.run(
+    `# Hello worldöcske
+    ## Bottom text
+    
+    simple text here like a paragraph`
+    );
 
   return (
     <div className="App">
