@@ -13,7 +13,7 @@ export class NEO {
 
     static run(file) {
         /* INITIATING MEMORY INSTANCE */
-        this.memory = NEOMEM.instance();
+        //this.memory = NEOMEM.instance();
 
         /* TOKENIZE FILE AND BUILD MEMORY MAP */
         const tokenizedMemoryMap = NEOTokenizer(file);

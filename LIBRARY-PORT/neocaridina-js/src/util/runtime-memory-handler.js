@@ -4,15 +4,23 @@ Singleton class that serves as a shared resource
 for accessing neocaridina-js memory and processes
 */
 
-export class NEOMEM {
-    static __neomemInstance;
-    static __memoryInstance;
+let __selfInstance;
+class NEOMEMClass {
+    __memoryInstance = {
+        renderable: [],
+        ready: false
+    };
 
-    static instance() {
-        if (!this.__neomemInstance) this.__neomemInstance = new this();
-        return this.__neomemInstance;
+    constructor() {
+        if (__selfInstance) throw new Error("Already instantiated");
+        __selfInstance = this;
     }
 
+    pokeHTML(HTML) { this.__memoryInstance.renderable.push(HTML) }
+}
 
-    get call() { return this.__memoryInstance }
+const NEOMEM = Object.freeze(new NEOMEMClass());
+
+module.exports = {
+    NEOMEM
 }
