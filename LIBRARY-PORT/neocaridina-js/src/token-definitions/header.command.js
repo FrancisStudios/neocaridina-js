@@ -12,9 +12,6 @@ export function neoHeader(instruction) {
     const numberOfHashmarks = (instruction.split('#')).length - 1;
     const textValue = (instruction.split('#'))[(instruction.split('#')).length - 1].trim();
     const HTML = `<h${numberOfHashmarks}>${textValue}</h${numberOfHashmarks}>`;
-
     const NEOMEMInstance = NEOMEM;
-    console.log(NEOMEMInstance.pokeHTML(HTML))
-    console.log(NEOMEM.__memoryInstance)
-
+    NEOMEMInstance.pokeHTML(HTML);
 }
